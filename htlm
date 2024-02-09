@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlace Aleatorio a Cuestionario</title>
+</head>
+<body>
+    <script>
+        // Lista de enlaces a tus cuestionarios
+        const quizLinks = ["https://forms.gle/U1yL1wkwZSz1S6Zs5", "https://forms.gle/4B28jAis5opbJs6dA","https://forms.gle/p5TWAE71rDRVyhs6A", "https://forms.gle/qW6ExYRng9eywUdC9"]
+          // Generar un número aleatorio entre 0 y la longitud de la lista
+        const randomIndex = Math.floor(Math.random() * quizLinks.length);
+
+        // Redirigir al enlace aleatorio
+        window.location.href = quizLinks[randomIndex];
+    </script>
+</body>
+</html>
